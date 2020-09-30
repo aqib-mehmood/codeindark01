@@ -1,0 +1,73 @@
+body{
+    margin: 50px;
+}
+
+
+.header{
+    background-color: rgb(2, 255, 171);
+    grid-area: 1/1/2/4;
+}
+
+
+.menu{
+    background-color: rgb(245, 140, 2);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.box1{
+    background-color: rgb(251, 255, 9);
+    
+}
+
+.box2{
+    background-color: rgb(1, 255, 86);
+    
+}
+
+.section{
+    background-color: rgb(255, 13, 13);
+    grid-area: 4/1/5/3;
+    padding-top: 250px;
+    
+}
+
+.sidebar{
+    background-color: rgb(2, 108, 247);
+    grid-area: 3/3/5/4;
+}
+
+.footer{
+    background-color: rgba(235, 6, 243, 0.897);
+    grid-area: 5/1/6/4;
+}
+
+.item{
+    text-align: center;
+    padding: 20px 10px;
+    
+}
+
+.item.section{
+    padding: 150px 10px;
+}
+
+.item.sidebar{
+    padding: 170px 10px;
+}
+
+.container{
+    margin: 10px auto;
+    box-sizing: border-box;
+    height: 600px;
+    display: grid;
+    grid-gap:  10px 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 col having equal size of 1 fraction*/
+    grid-template-rows: 60px 60px 60px auto 60px;  /* 5 rows having different size of 60px and auto */
+} 
+
+h1{
+    text-align: center;
+}
